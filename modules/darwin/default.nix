@@ -35,7 +35,10 @@ in
           stateVersion = "25.05";
           packages = pkgs.callPackage ./packages.nix { };
         };
-        programs = { } // import ../shared/home.nix { inherit config pkgs lib; };
+        programs = {
+        } // import ../shared/home.nix { inherit config pkgs lib; };
       };
   };
+
+  services = { };
 }
