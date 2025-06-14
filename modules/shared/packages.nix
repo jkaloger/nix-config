@@ -1,8 +1,11 @@
 { pkgs }:
 
-with pkgs; [
-	alacritty
-	direnv
-	neovim
-	fzf
+with pkgs;
+[
+  alacritty
+  direnv
+  neovim
+  fzf
+
+  nixfmt-rfc-style
 ]

@@ -25,18 +25,33 @@
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs } @inputs:
+  outputs =
+    {
+      self,
+      darwin,
+      nix-homebrew,
+      homebrew-bundle,
+      homebrew-core,
+      homebrew-cask,
+      home-manager,
+      nixpkgs,
+    }@inputs:
     let
       user = "jkaloger";
-      linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
+      linuxSystems = [
+        "x86_64-linux"
+        "aarch64-linux"
+      ];
       darwinSystems = [ "aarch64-darwin" ];
       forAllSystems = f: nixpkgs.lib.genAttrs (linuxSystems ++ darwinSystems) f;
     in
     {
 
-      darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (system: let
-        user = "jkaloger";
-      in
+      darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (
+        system:
+        let
+          user = "jkaloger";
+        in
         darwin.lib.darwinSystem {
           inherit system;
           specialArgs = inputs;
@@ -60,5 +75,5 @@
           ];
         }
       );
-  };
+    };
 }

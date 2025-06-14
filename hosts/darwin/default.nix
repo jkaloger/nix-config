@@ -1,14 +1,16 @@
 { config, pkgs, ... }:
 
-let user = "jkaloger"; in
+let
+  user = "jkaloger";
+in
 {
   imports = [
     ../../modules/darwin
   ];
 
-  environment.systemPackages =
-    [ pkgs.vim
-    ];
+  environment.systemPackages = [
+    pkgs.vim
+  ];
 
   system = {
     stateVersion = 6;

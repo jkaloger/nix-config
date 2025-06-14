@@ -1,9 +1,14 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
-	direnv = {
-		enableZshIntegration = true;
-		enable = true;
-		nix-direnv.enable = true;
-	};
+  direnv = {
+    enableZshIntegration = true;
+    enable = true;
+    nix-direnv.enable = true;
+  };
 }
