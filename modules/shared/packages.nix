@@ -8,4 +8,10 @@ with pkgs;
   fzf
 
   nixfmt-rfc-style
+
+  rustc
+  rust-analyzer
+  rustfmt
+  cargo
+  clippy
 ]
