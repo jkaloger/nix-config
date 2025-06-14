@@ -34,6 +34,12 @@ in
         home = {
           stateVersion = "25.05";
           packages = pkgs.callPackage ./packages.nix { };
+          file = {
+            ".config/aerospace" = {
+              source = ./config/aerospace;
+              recursive = true;
+            };
+          };
         };
         programs = {
         } // import ../shared/home.nix { inherit config pkgs lib; };

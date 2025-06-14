@@ -1,0 +1,46 @@
+enable-normalization-flatten-containers = false
+enable-normalization-opposite-orientation-for-nested-containers = false
+
+gaps.inner.horizontal = 16
+gaps.inner.vertical =   16
+gaps.outer.left =       16
+gaps.outer.bottom =     16
+gaps.outer.top =        16
+gaps.outer.right =      16
+
+[mode.main.binding]
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+
+alt-shift-k = 'resize smart +25'
+alt-shift-j = 'resize smart -25'
+
+ctrl-alt-h = 'move left'
+ctrl-alt-j = 'move down'
+ctrl-alt-k = 'move up'
+ctrl-alt-l = 'move right'
+
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-w = 'move-node-to-monitor next'
+alt-shift-s = 'move-node-to-monitor prev'
+
+alt-f = 'fullscreen'
+
+alt-w = 'layout h_accordion' # 'layout tabbed' in i3
+alt-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
+
+alt-shift-c = 'reload-config'
+
+[[on-window-detected]]
+if.window-title-regex-substring = 'App'
+run = 'layout floating'
+
