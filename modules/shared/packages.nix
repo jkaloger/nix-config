@@ -2,6 +2,7 @@
 
 with pkgs; [
 	alacritty
-	nvim
+	direnv
+	neovim
 	fzf
 ]

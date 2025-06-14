@@ -20,6 +20,7 @@ let user = "jkaloger"; in
 				stateVersion = "25.05";
 				packages = pkgs.callPackage ./packages.nix {};
 			};
+			programs = {} // import ../shared/home.nix { inherit config pkgs lib; };
 		};
 	};
 }
