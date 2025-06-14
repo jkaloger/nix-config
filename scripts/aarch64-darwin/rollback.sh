@@ -10,4 +10,4 @@ if [ -z "$GEN" ]; then
 	exit 1
 fi
 
-/run/current-system/sw/bin/darwin-rebuild switch --flake .#macos --switch-generation $GEN
+/run/current-system/sw/bin/darwin-rebuild switch --flake .#aarch64-darwin --switch-generation $GEN
