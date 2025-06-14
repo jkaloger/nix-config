@@ -17,8 +17,8 @@ let user = "jkaloger"; in
 
     defaults = {
       dock = {
-        autoHide = true;
-        orientation: "right";
+        autohide = true;
+        orientation = "right";
       };
     };
   };
