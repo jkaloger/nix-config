@@ -3,4 +3,5 @@ _:
 [
   "discord"
   "raycast"
+  "timing"
 ]
