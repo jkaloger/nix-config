@@ -14,4 +14,6 @@ with pkgs;
   rustfmt
   cargo
   clippy
+
+  gh
 ]
