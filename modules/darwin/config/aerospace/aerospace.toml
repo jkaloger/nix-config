@@ -1,6 +1,8 @@
 enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
 
+on-focus-changed = ['move-mouse window-lazy-center']
+
 gaps.inner.horizontal = 16
 gaps.inner.vertical =   16
 gaps.outer.left =       16
@@ -13,7 +15,6 @@ alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
-
 
 alt-shift-k = 'resize smart +25'
 alt-shift-j = 'resize smart -25'
