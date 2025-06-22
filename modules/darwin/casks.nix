@@ -5,4 +5,6 @@ _:
   "raycast"
   "timing"
   "homerow"
+  "ghostty"
+  "alt-tab"
 ]
