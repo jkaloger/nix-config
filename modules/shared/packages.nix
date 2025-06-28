@@ -16,4 +16,7 @@ with pkgs;
   clippy
 
   gh
+  act
+
+  deno
 ]
