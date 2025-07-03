@@ -50,9 +50,9 @@ in
     jankyborders = {
       enable = true;
       blur_radius = 5.0;
-      active_color = "0xffFF9E3B";
+      active_color = "0xff494d64";
       inactive_color = "0x00494d64";
-      width = 20.0;
+      width = 4.0;
     };
   };
 }
