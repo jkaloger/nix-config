@@ -19,4 +19,6 @@ with pkgs;
   act
 
   deno
+
+  slides
 ]
