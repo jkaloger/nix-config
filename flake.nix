@@ -46,7 +46,17 @@
       forAllSystems = f: nixpkgs.lib.genAttrs (linuxSystems ++ darwinSystems) f;
     in
     {
-
+      linuxConfigurations = nixpkgs.lib.genAttrs linuxSystems (
+        system: let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+          home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
+            modules = [
+              ./hosts/linux
+            ];
+          }
+      );
       darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (
         system:
         let

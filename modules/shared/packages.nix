@@ -2,23 +2,18 @@
 
 with pkgs;
 [
-  alacritty
-  direnv
-  neovim
-  fzf
-
-  nixfmt-rfc-style
-
-  rustc
-  rust-analyzer
-  rustfmt
+  act
   cargo
   clippy
-
-  gh
-  act
-
   deno
-
+  direnv
+  fzf
+  gh
+  ghostty
+  neovim
+  nixfmt-rfc-style
+  rust-analyzer
+  rustc
+  rustfmt
   slides
 ]
